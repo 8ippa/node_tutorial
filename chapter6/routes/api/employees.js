@@ -3,12 +3,25 @@ const router = express.Router();
 const employeesController = require('../../controllers/employeesController');
 // const verifyJWT = require('../../middleware/verifyJWT');
 
+const ROLES_LIST = require('../../config/roles_list');
+const verifyRoles = require('../../middleware/verifyRoles');
+
+// all users already have to have JWT
+
 router.route('/')
-    // .get(verifyJWT, employeesController.getAllEmployees) // --> works if we only want it for select routes
     .get(employeesController.getAllEmployees)
-    .post(employeesController.createNewEmployee)
-    .put(employeesController.updateEmpoyee)
-    .delete(employeesController.deleteEmployee);
+    .post(
+        verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),
+        employeesController.createNewEmployee
+    )
+    .put(
+        verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),
+        employeesController.updateEmpoyee
+    )
+    .delete(
+        verifyRoles(ROLES_LIST.Admin),
+        employeesController.deleteEmployee
+    );
 
 router.route('/:id').get(employeesController.getEmployee);
 
