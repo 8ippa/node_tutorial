@@ -1,1 +1,2 @@
 2023/08/19	14:42:30	d61b104f-a658-4721-bbd7-ef25309d4069	Error: Not allowed by CORS
+2023/08/21	22:44:44	7ec9ef2f-19e4-40de-8991-5ad363a7f86a	TypeError: Cannot read properties of undefined (reading 'jwt')
