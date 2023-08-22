@@ -1,1 +1,29 @@
-[{"username":"lakshya","roles":{"Admin":5150,"Editor":1984,"User":2001},"password":"$2b$10$AjPc//KZY5IKMyA6ki7VXOasS9T4vR58BHtnjTfQpsHJdgrS.7pPy","refreshToken":""},{"username":"magpie","roles":{"Editor":1984,"User":2001},"password":"$2b$10$FOQmEWuj.wmziOW0HISFHOptF1RnSaQ12Y5ocY4I.KW/gRCN0rRQC","refreshToken":""},{"username":"appi","roles":{"User":2001},"password":"$2b$10$wL4NMXsoCLPGQ6mUvebPdueZpT6wthutF0Wvr6PW4WawP.a1D4YhC","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwcGkiLCJpYXQiOjE2OTI2NDI5ODQsImV4cCI6MTY5MjY0MzEwNH0.pM03npIxLZEN6A19o8b1EpUpyNh-yZs9Uj-cdNUtGQc"}]
+[
+    {
+        "username": "lakshya",
+        "roles": {
+            "Admin": 5150,
+            "Editor": 1984,
+            "User": 2001
+        },
+        "password": "$2b$10$AjPc//KZY5IKMyA6ki7VXOasS9T4vR58BHtnjTfQpsHJdgrS.7pPy",
+        "refreshToken": ""
+    },
+    {
+        "username": "magpie",
+        "roles": {
+            "Editor": 1984,
+            "User": 2001
+        },
+        "password": "$2b$10$FOQmEWuj.wmziOW0HISFHOptF1RnSaQ12Y5ocY4I.KW/gRCN0rRQC",
+        "refreshToken": ""
+    },
+    {
+        "username": "appi",
+        "roles": {
+            "User": 2001
+        },
+        "password": "$2b$10$wL4NMXsoCLPGQ6mUvebPdueZpT6wthutF0Wvr6PW4WawP.a1D4YhC",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwcGkiLCJpYXQiOjE2OTI2NDI5ODQsImV4cCI6MTY5MjY0MzEwNH0.pM03npIxLZEN6A19o8b1EpUpyNh-yZs9Uj-cdNUtGQc"
+    }
+]
