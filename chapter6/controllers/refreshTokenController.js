@@ -1,11 +1,7 @@
-const usersDB = {
-    users: require('../model/users.json'),
-    setUsers: function (data) { this.users = data; }
-};
-
+const User = require('../model/User');
 const jwt = require('jsonwebtoken');
 
-const handleRefreshToken = (req, res) => {
+const handleRefreshToken = async (req, res) => {
     console.log('here');
     const cookies = req.headers.cookie;
     if (!cookies?.split('=')[1]) { // optional chaining operator
@@ -14,7 +10,8 @@ const handleRefreshToken = (req, res) => {
     const refreshToken = cookies.split('=')[1];
     console.log("==>", refreshToken);
     // check if user with such refreshToken exists
-    const foundUser = usersDB.users.find(person => person.refreshToken === refreshToken);
+    // const foundUser = await User.findOne({refreshToken: refreshToken}).exec();
+    const foundUser = await User.findOne({refreshToken }).exec(); // because key and value names are same
     if (!foundUser) {
         return res.sendStatus(403); // forbidden
     }

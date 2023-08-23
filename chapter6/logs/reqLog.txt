@@ -174,3 +174,8 @@
 2023/08/22	00:06:35	330d83c5-7478-483b-af56-8a446ff40666	POST	undefined	/employees
 2023/08/22	23:48:31	bfe6c6ae-c39a-483c-a7dd-05697c281ba8	POST	undefined	/register
 2023/08/22	23:49:25	e86985b1-132e-4d5a-a4e5-ea269fd0cceb	POST	undefined	/register
+2023/08/23	22:37:24	308f5f6b-8290-4d0c-80d3-0ccb0e6eed0b	POST	undefined	/register
+2023/08/23	22:37:49	c52ea368-1898-4d0d-895c-f3dc17af5c02	POST	undefined	/auth
+2023/08/23	22:38:11	d854e02e-3c71-432d-98af-c3925505e437	POST	undefined	/auth
+2023/08/23	22:39:35	d9f986b5-174e-4c1e-b33f-65cfcd173129	POST	undefined	/auth
+2023/08/23	22:39:41	3ae29964-90a5-4948-ac4c-10909e607dc2	GET	undefined	/logout
